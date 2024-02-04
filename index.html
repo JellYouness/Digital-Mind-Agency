@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="fonts/font.css" />
     <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>Digital Mind Agency</title>
   </head>
   <body>
@@ -20,6 +21,7 @@
             <li><a href="#Portfolio">Portfolio</a></li>
             <li><a href="#Contact" class="contact">Contact</a></li>
           </ul>
+          <button class="toggle-btn" onclick="toggleNav()"><i class="bi bi-list"></i></button>
         </nav>
       
         <div class="video-container">
@@ -86,7 +88,7 @@
       <!-- /////////////////////////////////////////////////////////// -->
       <section id="Apropos" class="apropos">
         <div class="apropos1">
-          <img src="./images/Creative Team.png">
+          <img class="apropos-image" src="./images/Creative Team.png">
           <div class="apropos-flex">
             <div class="apropos-title">QUI SOMMES-<span class="blue">NOUS?</span></div>
             <div class="apropos-text">Nous sommes une équipe de passionnés du web, pleine de bonnes idées qui trouve son bonheur dans l’accompagnement de ses clients tout au long de leurs projets web. La créativité et le professionnalisme sont les fondements sur lesquels on se base pour livrer des sites internet à la hauteur de votre identité et de vos objectifs. Digital mind a su évoluer au cours des années pour s’adapter au monde passionnant du digital, et garder la même énergie et motivation qu’au départ.</div>
@@ -104,7 +106,7 @@
             </div>
             <button class="hero-button">CONFINEZ-NOUS VOTRE PROJET !</button>
           </div>
-          <img src="./images/Boost Your Business.png">
+          <img class="apropos-image" src="./images/Boost Your Business.png">
         </div>
       </section>
       <!-- /////////////////////////////////////////////////////////// -->
@@ -214,12 +216,12 @@
       <section class="partners">
         <div class="partners-title">PARTENAIRE <span class="blue">OFFICIELS.</span></div>
         <div class="center" style="padding-bottom: 3rem;">
-          <img src="images/info-es2im.png">
+          <img class="part" src="images/info-es2im.png">
         </div>
       </section>
       <!-- /////////////////////////////////////////////////////////// -->
       <section id="Contact" class="contact-area">
-        <img src="images/65-Return-Policy.png">
+        <img class="cont" src="images/65-Return-Policy.png">
         <div class="contact-body">
           <div class="contact-title">
             <div class="contact-title1">DITES-NOUS <span class="blue">BONJOUR !</span></div>
@@ -268,4 +270,10 @@
       </footer>
     </div>
   </body>
+  <script>
+  function toggleNav() {
+    var nav = document.querySelector('.nav-list');
+    nav.style.display = (nav.style.display === 'none' || nav.style.display === '') ? 'flex' : 'none';
+  }
+</script>
 </html>
